@@ -1,11 +1,8 @@
 services:
 
-  nginxjs-suiteai:
+  nginxjs-suiteai-compose:
     container_name: nginxjs-suiteai-compose
     image: erdenirf/nginxjs-suiteai
     restart: always
     ports:
       - "10594:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./njs/:/etc/nginx/njs/
